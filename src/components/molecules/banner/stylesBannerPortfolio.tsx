@@ -3,7 +3,7 @@ export const styles = {
         width: '100%',
         height: { xs: "auto", md: "120%" },
         padding: "3rem 4.5%",
-        pt: { xs: "0", md: "3rem" },
+        pt: { xs: "25%", md: "8%" },
         display: "flex",
         flexDirection: { xs: "column-reverse", md: "row" },
         justifyContent: { xs: "flex-end", md: "space-between" },

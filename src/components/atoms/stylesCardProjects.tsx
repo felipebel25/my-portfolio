@@ -3,9 +3,9 @@ export const styles = {
         maxWidth: 375,
         height: "100%",
         margin: "2rem 0",
-        '&:hover':{
-            '& header':{
-                display:'flex !important',
+        '&:hover': {
+            '& header': {
+                display: 'flex !important',
             }
         }
     },
@@ -16,10 +16,10 @@ export const styles = {
         position: "relative",
         top: '0.75rem',
         marginBottom: '-12.8%',
-        zIndex: 20,
+        zIndex: 1,
         width: "100%",
         height: "3rem",
-        display: "none",
+        display: { xs: "flex", md: "none" },
         justifyContent: "space-between",
         alignItems: "center",
         padding: "0 1rem",

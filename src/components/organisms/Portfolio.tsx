@@ -4,6 +4,7 @@ import { MainHomePortfolio } from "../molecules/homePortfolio/main/MainHomePortf
 import { FooterPortfolio } from "../molecules/homePortfolio/footer/FooterPortfolio";
 
 import { styles } from "./stylesPortfolio";
+import 'animate.css';
 
 export const Portfolio = () => {
     return (

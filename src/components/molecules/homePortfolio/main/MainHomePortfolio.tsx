@@ -5,7 +5,7 @@ import { MyProjects } from "../../my_projects/MyProjects"
 
 export const MainHomePortfolio = () => {
     return (
-        <Box component='main'>
+        <Box component='main' bgcolor='info.main'>
             <BannerPortfolio />
             <AboutMe />
             <MyProjects />

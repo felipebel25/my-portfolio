@@ -7,6 +7,8 @@ export const styles = {
         flexDirection: { xs: "column", md: "row" },
         padding: { xs: "8% 4.5%", md: "2% 4.5%" },
         textAlign: { xs: "center", md: "left" },
+        scrollMargin: '80px',
+
 
     },
     sectionText: {

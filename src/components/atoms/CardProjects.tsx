@@ -16,7 +16,6 @@ export const CardProjects = ({ name, description, img, url, urlFolder, tags }: P
     return (
         <Card sx={styles.main}>
             <Fade in={true} timeout={3000}>
-
                 <Box component='header' sx={styles.iconsActions}>
                     <Tooltip title={'Go to Project'} >
                         <IconButton sx={styles.iconAction} >

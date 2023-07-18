@@ -7,8 +7,8 @@ export const BannerPortfolio = () => {
     const size = useMediaQuery('(min-width:600px)')
 
     return (
-        <Box component='section' sx={styles.main}>
-            <Box component='article' sx={styles.sectionText}>
+        <Box id='banner' component='section' sx={styles.main}>
+            <Box component='article' sx={styles.sectionText}  className='animate__animated animate__fadeInLeft' >
                 <Typography variant="h3" component='h2' sx={styles.title}>Hey I&#39;m Felipe</Typography>
                 <Typography sx={styles.description}>
                     Web Developer from Colombia. Espefically Frontend Developer.<br />
@@ -26,7 +26,7 @@ export const BannerPortfolio = () => {
                     </Button>
                 </Box>
             </Box>
-            <Box component='article' sx={styles.sectionImage}>
+            <Box className='animate__animated animate__fadeInRight' component='article' sx={styles.sectionImage}>
                 <Image
                     style={size ? { width: "85%", height: "auto" } : { width: "80%", height: "auto" }}
                     quality={100}

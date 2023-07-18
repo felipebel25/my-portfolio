@@ -4,7 +4,7 @@ import { CardProjects } from "@/components/atoms/CardProjects"
 
 export const MyProjects = () => {
     return (
-        <Box component='section' sx={styles.main}>
+        <Box id="my_projects" component='section' sx={styles.main}>
             <Typography variant="h4" component='h3' sx={styles.title}>My Projects</Typography>
             <Box sx={styles.containerCards}>
                 {projects.map(project =>
@@ -44,7 +44,7 @@ const projects = [
         img: "/images/hey_funding.webp",
         url: "https://hey-funding.vercel.app/",
         urlFolder: "",
-        tags: ['ReactJs', 'NextJs', 'Typescript', 'Material-UI','HTML', 'CSS']
+        tags: ['ReactJs', 'NextJs', 'Typescript', 'Material-UI', 'HTML', 'CSS']
     },
     // {
     //     name: "Miaugram",
