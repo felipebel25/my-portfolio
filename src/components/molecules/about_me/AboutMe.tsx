@@ -6,8 +6,7 @@ export const AboutMe = () => {
     const size = useMediaQuery('(min-width:600px)')
 
     return (
-        <Box sx={styles.main} component='main'>
-
+        <Box id="about_me" sx={styles.main} component='main'>
             <Box component='section' sx={styles.sectionText}>
                 <Typography variant="h4" color='secondary' sx={styles.about}>About</Typography>
                 <Typography variant="h3" sx={styles.whoIam}>Who I Am</Typography>
@@ -25,9 +24,7 @@ export const AboutMe = () => {
                     height='1050'
                     alt="Foto Image de Felipe Medina Frontend Developer, Portafolio de Felipe Medina"
                     src='/images/console.png'
-                    priority={false}
                 />
-
             </Box>
         </Box>
     )
