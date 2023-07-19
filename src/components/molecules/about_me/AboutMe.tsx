@@ -10,10 +10,11 @@ export const AboutMe = () => {
             <Box component='section' sx={styles.sectionText}>
                 <Typography variant="h4" color='secondary' sx={styles.about}>About</Typography>
                 <Typography variant="h3" sx={styles.whoIam}>Who I Am</Typography>
-                <Typography>I specialize in building mobile responsive front-end UI applications that connect with APIs and other backend technologies. Though I am most proficient in building front-end applications using HTML, CSS, Javascript, and React
+                <Typography>He specializes in building mobile responsive front-end UI apps that connect with APIs and other back-end technologies. He is also proficient in building front-end applications using HTML, CSS, JavaScript, Typescript and React.
+
                 </Typography>
                 <Typography sx={{ mt: "1rem" }}>
-                    I believe in companionship and team work and I am willing to help my coworkers with anything they need if I can do it. I am autodidact and self disciplined.
+                    He believes in camaraderie and teamwork and is willing to help his co-workers in whatever they need. I am self-taught and self-disciplined.
                 </Typography>
             </Box>
             <Box component='section' sx={styles.sectionConsole}>

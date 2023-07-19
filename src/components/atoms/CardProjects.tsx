@@ -1,12 +1,13 @@
 import { Box, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Chip, Fade, IconButton, Tooltip, Typography } from "@mui/material"
 import { styles } from "./stylesCardProjects";
 import { CodeOutlined, LinkOutlined } from "@mui/icons-material";
+import { navigateToPublicUrl } from "@/utils/globalFunctions";
 
 interface Props {
     name: string;
     description: string;
     url: string;
-    urlFolder?: string;
+    urlFolder: string;
     tags: string[];
 
     img: string;
@@ -18,19 +19,18 @@ export const CardProjects = ({ name, description, img, url, urlFolder, tags }: P
             <Fade in={true} timeout={3000}>
                 <Box component='header' sx={styles.iconsActions}>
                     <Tooltip title={'Go to Project'} >
-                        <IconButton sx={styles.iconAction} >
+                        <IconButton onClick={() => navigateToPublicUrl(url)} sx={styles.iconAction} >
                             <LinkOutlined />
                         </IconButton>
                     </Tooltip>
                     <Tooltip title={'Go to Repository'} >
-                        <IconButton sx={styles.iconAction} >
+                        <IconButton onClick={() => navigateToPublicUrl(urlFolder)} sx={styles.iconAction} >
                             <CodeOutlined />
                         </IconButton>
                     </Tooltip>
                 </Box>
             </Fade>
-
-            <CardActionArea>
+            <CardActionArea onClick={() => navigateToPublicUrl(url)}>
                 <CardMedia
                     component="img"
                     height="170"
