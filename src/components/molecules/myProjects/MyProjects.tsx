@@ -5,7 +5,7 @@ import { CardProjects } from "@/components/atoms/CardProjects"
 export const MyProjects = () => {
     return (
         <Box id="my_projects" component='section' sx={styles.main}>
-            <Typography variant="h4" component='h3' sx={styles.title}>My Projects</Typography>
+            <Typography variant="h4" component='h3' sx={styles.title}>Side Projects</Typography>
             <Box sx={styles.containerCards}>
                 {projects.map(project =>
                     <CardProjects

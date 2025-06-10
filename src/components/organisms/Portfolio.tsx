@@ -1,7 +1,7 @@
 import { Box } from "@mui/material"
-import { HeaderHomePortfolio } from "../molecules/homePortfolio/header/HeaderHomePortfolio"
-import { MainHomePortfolio } from "../molecules/homePortfolio/main/MainHomePortfolio";
-import { FooterPortfolio } from "../molecules/homePortfolio/footer/FooterPortfolio";
+import { HeaderHomePortfolio } from "../molecules/HomePortfolio/header/HeaderHomePortfolio"
+import { MainHomePortfolio } from "../molecules/HomePortfolio/main/MainHomePortfolio";
+import { FooterPortfolio } from "../molecules/HomePortfolio/footer/FooterPortfolio";
 
 import { styles } from "./stylesPortfolio";
 import 'animate.css';
