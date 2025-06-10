@@ -23,13 +23,21 @@ export const MyProjects = () => {
     )
 }
 const projects = [
+    // {
+    //     name: "Tesla-shop",
+    //     description: 'Tesla shop is a clone of the real tesla shop website where a Full-Stack application is used, therefore a database is used and payments are made with the Paypal API.',
+    //     img: "/images/tesla-shop.webp",
+    //     url: "https://teslita-repo.up.railway.app/",
+    //     urlFolder: "https://github.com/felipebel25/Teslita-Repo",
+    //     tags: ['ReactJs', 'NextJs', 'Typescript', 'MongoDb', 'Material-UI', 'HTML', 'CSS']
+    // },
     {
-        name: "Tesla-shop",
-        description: 'Tesla shop is a clone of the real tesla shop website where a Full-Stack application is used, therefore a database is used and payments are made with the Paypal API.',
-        img: "/images/tesla-shop.webp",
-        url: "https://teslita-repo.up.railway.app/",
-        urlFolder: "https://github.com/felipebel25/Teslita-Repo",
-        tags: ['ReactJs', 'NextJs', 'Typescript', 'MongoDb', 'Material-UI', 'HTML', 'CSS']
+        name: "Nearby Disney",
+        description: 'Built a fun app that shows your distance from Disney Parks worldwide using your location, Leaflet for maps, and MongoDB $geoNear for geospatial distance calculations. 🌍🗺️🛰️',
+        img: "/images/disney-app.png",
+        url: "https://disney-client.vercel.app/",
+        urlFolder: "https://github.com/felipebel25/disney-client",
+        tags: ['ReactJs', 'AstroJs', 'Typescript', 'MongoDB', 'ExpressJs']
     },
     {
         name: "PokeDex",
@@ -37,7 +45,7 @@ const projects = [
         img: "/images/pokedex.webp",
         url: "https://pokedex-nextjs-itk2.vercel.app/",
         urlFolder: "https://github.com/felipebel25/pokedex_nextjs",
-        tags: ['ReactJs', 'NextJs', 'Typescript', 'MongoDb', 'Material-UI', 'HTML', 'CSS']
+        tags: ['ReactJs', 'NextJs', 'Typescript', 'MongoDB', 'Material-UI']
     },
     {
         name: "HeyFunding",
@@ -45,14 +53,6 @@ const projects = [
         img: "/images/hey_funding.webp",
         url: "https://hey-funding.vercel.app/",
         urlFolder: "https://github.com/felipebel25/HeyFunding",
-        tags: ['ReactJs', 'NextJs', 'Typescript', 'Material-UI', 'HTML', 'CSS']
+        tags: ['ReactJs', 'NextJs', 'Typescript', 'Material-UI']
     },
-    // {
-    //     name: "Miaugram",
-    //     description: 'Pachogram is an application made in ReactJs that simulates a kind of animal Instagram, where you can save your favorite photos..',
-    //     img: "",
-    //     url: "https://miaugrams.vercel.app/",
-    //     urlFolder: "",
-    //     tags: ['ReactJs', 'GraphQL',]
-    // }
 ]
