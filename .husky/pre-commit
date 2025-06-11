@@ -1,0 +1,14 @@
+# Run the linter to check for code issues
+npm run lint
+
+# Run Prettier to format the code according to defined rules
+npm run format
+
+# Capture the added, copied, or modified files
+FILES=$(git diff --diff-filter=ACM --name-only --cached)
+
+# Check if there are any files matching the filter
+if [ -n "$FILES" ]; then
+  # Add the captured files back to the staging area
+  echo "$FILES" | xargs git add
+fi
