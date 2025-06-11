@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
-import { AboutMe } from "../../AboutMe/AboutMe";
-import { BannerPortfolio } from "../../Banner/BannerPortfolio";
-import { MyProjects } from "../../MyProjects/MyProjects";
-import TimelineDev from "../../Timeline/Timeline";
+import { AboutMe } from "../../aboutMe/AboutMe";
+import { BannerPortfolio } from "../../banner/BannerPortfolio";
+import { MyProjects } from "../../myProjects/MyProjects";
+import TimelineDev from "../../timeline/Timeline";
 
 export const MainHomePortfolio = () => (
   <Box component="main" bgcolor="info.main">
