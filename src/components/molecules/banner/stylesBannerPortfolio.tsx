@@ -10,7 +10,6 @@ export const styles = {
         alignItems: 'center',
     },
     sectionText: {
-        // border: "1px solid red",
         width: { xs: '100%', md: 'auto' },
         height: { xs: 'auto', md: '100%' },
         display: 'flex',
@@ -30,7 +29,6 @@ export const styles = {
         mb: '1rem',
     },
     sectionImage: {
-        //  border: "1px solid red",
         width: { xs: '100%', md: '30%' },
         height: { xs: 'auto', md: '100%' },
         display: 'flex',
@@ -38,6 +36,6 @@ export const styles = {
         justifyContent: 'center',
     },
     button: {
-        margin: { xs: '0.2rem 0.4rem', md: '0 1rem' },
+        margin: { xs: '0.2rem 0.4rem', md: '0 .5rem' },
     },
 }

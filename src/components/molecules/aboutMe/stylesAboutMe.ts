@@ -1,8 +1,7 @@
 export const styles = {
     main: {
-        // background: "linear-gradient(180deg, rgba(53,39,67,1) 0%, rgba(53,39,67,0.9556197478991597) 50%, rgba(53,39,67,0.8239670868347339) 100%)",
         backgroundColor: 'secondary.light',
-        height: { xs: 'auto', md: '55vh' },
+        height: { xs: 'auto', md: '33rem' },
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
         justifyContent: 'space-between',

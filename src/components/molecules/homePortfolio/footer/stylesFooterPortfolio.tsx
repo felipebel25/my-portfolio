@@ -4,7 +4,7 @@ export const styles = {
             xs: 'linear-gradient(180deg, #242424 -5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
             md: 'linear-gradient(180deg, #242424 5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
         },
-        height: { xs: 'auto', md: '40vh' },
+        height: { xs: 'auto', md: '25rem' },
         pb: { xs: '25%', md: '0' },
     },
     textSection: {

@@ -24,7 +24,7 @@ export const TimelineDev = () => {
                 variant="h4"
                 sx={{ mb: 4, textAlign: 'center', fontSize: { md: '2.85rem' } }}
             >
-                Timeline
+                Work Experience
             </Typography>
             <Timeline position={isSmallScreen ? 'right' : 'alternate'}>
                 {experiences.map((item, index) => (

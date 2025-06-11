@@ -10,7 +10,6 @@ export const styles = {
         backgroundColor: 'info.main',
         justifyContent: { xs: 'flex-end', md: 'space-between' },
         alignItems: { xs: 'center', md: 'flex-start' },
-        // border: "1px solid red"
     },
     title: {
         textAlign: { xs: 'center', md: 'left' },
@@ -22,7 +21,7 @@ export const styles = {
         flexDirection: { xs: 'column', md: 'row' },
         m: '2rem 0',
         alignItems: { xs: 'center', md: 'space-between' },
-
+        gap: '1rem',
         justifyContent: 'space-evenly',
     },
 }

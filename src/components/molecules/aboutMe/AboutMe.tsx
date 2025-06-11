@@ -2,6 +2,7 @@ import { Box, Typography, useMediaQuery } from '@mui/material'
 import Image from 'next/image'
 
 import { styles } from './stylesAboutMe'
+
 export const AboutMe = () => {
     const size = useMediaQuery('(min-width:600px)')
     return (
@@ -14,10 +15,13 @@ export const AboutMe = () => {
                     Who I Am
                 </Typography>
                 <Typography>
-                    He specializes in building mobile responsive front-end UI
-                    apps that connect with APIs and other back-end technologies.
-                    He is also proficient in building front-end applications
-                    using HTML, CSS, JavaScript, Typescript and React.
+                    He enjoys leading teams and sharing knowledge to help
+                    achieve successful project outcomes. With a strong passion
+                    for programming, he excels at solving complex problems and
+                    delivering clean, efficient code that aligns with client
+                    goals. He’s also deeply interested in the business aspects
+                    of technology and takes pride in driving solutions that
+                    address real-world challenges and deliver measurable value
                 </Typography>
                 <Typography sx={{ mt: '1rem' }}>
                     He believes in camaraderie and teamwork and is willing to
@@ -27,21 +31,13 @@ export const AboutMe = () => {
             </Box>
             <Box component="section" sx={styles.sectionConsole}>
                 <Image
-                    style={
-                        size
-                            ? {
-                                  border: '2px solid black',
-                                  borderRadius: '0.55rem',
-                                  width: '70%',
-                                  height: 'auto',
-                              }
-                            : {
-                                  width: '100%',
-                                  height: 'auto',
-                                  border: '2px solid black',
-                                  borderRadius: '0.3rem',
-                              }
-                    }
+                    style={{
+                        width: '90%',
+                        height: 'auto',
+                        border: '2px solid black',
+                        borderRadius: '0.3rem',
+                        maxWidth: '620px',
+                    }}
                     quality={100}
                     width="1050"
                     height="1050"

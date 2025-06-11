@@ -3,7 +3,7 @@ export const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: { xs: '1rem', md: '1.5rem 4.5%' },
+        padding: { xs: '1rem', md: '1.5rem 4%' },
         position: 'fixed',
         width: '100%',
         backgroundColor: 'info.main',
@@ -11,7 +11,7 @@ export const styles = {
     },
     urlSection: {
         width: '50%',
-        maxWidth: '44rem',
+        maxWidth: '35rem',
         display: 'flex',
         justifyContent: 'space-around',
     },

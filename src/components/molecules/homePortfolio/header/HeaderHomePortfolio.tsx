@@ -33,10 +33,7 @@ export const HeaderHomePortfolio = () => {
             inline: 'start',
             behavior: 'smooth',
         })
-    const goToIdSectionMobile = async (id: string) => {
-        await goToIdSection(id)
-        // handleClose()
-    }
+    const goToIdSectionMobile = (id: string) => goToIdSection(id)
 
     return (
         <Box component="header" sx={styles.header}>
@@ -54,15 +51,6 @@ export const HeaderHomePortfolio = () => {
                         {name}
                     </Button>
                 ))}
-                {/* <Button startIcon={<WorkOutline />} sx={styles.button} href="">
-                    Projects
-                </Button>
-                <Button startIcon={<Construction />} sx={styles.button} href="">
-                    Tools & Langs
-                </Button>
-                <Button startIcon={<ContactMail />} sx={styles.button} href="">
-                    Contact
-                </Button> */}
             </Box>
             <IconButton
                 size="large"
@@ -92,7 +80,7 @@ export const HeaderHomePortfolio = () => {
                         <MenuItem
                             key={name}
                             sx={styles.menuItem}
-                            onClick={() => goToIdSectionMobile(url)}
+                            onClick={() => goToIdSection(url)}
                         >
                             <ListItemIcon>
                                 <Icon />
