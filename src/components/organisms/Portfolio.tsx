@@ -6,12 +6,10 @@ import { FooterPortfolio } from '../molecules/homePortfolio/footer/footerPortfol
 import { styles } from './stylesPortfolio'
 import 'animate.css'
 
-export const Portfolio = () => {
-    return (
-        <Box sx={styles.main}>
-            <HeaderHomePortfolio />
-            <MainHomePortfolio />
-            <FooterPortfolio />
-        </Box>
-    )
-}
+export const Portfolio = () => (
+    <Box sx={styles.main}>
+        <HeaderHomePortfolio />
+        <MainHomePortfolio />
+        <FooterPortfolio />
+    </Box>
+)
