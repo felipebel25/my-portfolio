@@ -3,31 +3,31 @@ export const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: { xs: "1rem", md: "1.5rem 4.5%" },
-        position: "fixed",
-        width: "100%",
-        backgroundColor: "info.main",
-        zIndex: 3
+        padding: { xs: '1rem', md: '1.5rem 4.5%' },
+        position: 'fixed',
+        width: '100%',
+        backgroundColor: 'info.main',
+        zIndex: 3,
     },
     urlSection: {
-        width: "50%",
-        maxWidth: "44rem",
-        display: "flex",
-        justifyContent: "space-around",
+        width: '50%',
+        maxWidth: '44rem',
+        display: 'flex',
+        justifyContent: 'space-around',
     },
     name: {
         cursor: 'pointer',
         fontWeight: 700,
         '& > b': {
-            color: "secondary.main"
-        }
+            color: 'secondary.main',
+        },
     },
     button: {
         borderRadius: 0,
-        cursor: "pointer",
+        cursor: 'pointer',
         '&:hover': {
-            opacity: "1",
-            backgroundColor: "transparent",
+            opacity: '1',
+            backgroundColor: 'transparent',
             '&::after': {
                 width: '100%',
                 transition: 'width 0.3s ease-in-out',
@@ -50,28 +50,26 @@ export const styles = {
             visibility: 'visible',
             transform: 'scaleX(1)',
         },
-
     },
     drawer: {
         backdropFilter: 'blur(4px)',
-        transition: 'all 0.5s ease-out'
+        transition: 'all 0.5s ease-out',
     },
     drawerContainer: {
-        width: "13rem",
-
+        width: '13rem',
     },
     nameDrawer: {
-        pt: "3rem",
-        pb: "2rem",
-        margin: "0 auto",
+        pt: '3rem',
+        pb: '2rem',
+        margin: '0 auto',
         cursor: 'pointer',
-        textAlign:"center",
+        textAlign: 'center',
         fontWeight: 700,
         '& > b': {
-            color: "secondary.main"
-        }
+            color: 'secondary.main',
+        },
     },
     menuItem: {
-        margin: "1rem 0"
-    }
+        margin: '1rem 0',
+    },
 }
