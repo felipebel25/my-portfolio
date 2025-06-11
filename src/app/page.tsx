@@ -1,11 +1,10 @@
 "use client";
-import { Portfolio } from "@/components/organisms/Portfolio";
+import { Portfolio } from "@/components/organisms/portfolio";
 
 export default function Home() {
   return (
     <>
       <Portfolio />
-
     </>
-  )
+  );
 }
