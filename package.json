@@ -1,27 +1,34 @@
 {
-  "name": "felipe-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^7.1.1",
-    "@mui/lab": "^7.0.0-beta.13",
-    "@types/node": "24.0.0",
-    "@types/react": "19.1.7",
-    "@types/react-dom": "19.1.6",
-    "animate.css": "^4.1.1",
-    "eslint": "9.28.0",
-    "eslint-config-next": "15.3.3",
-    "next": "15.3.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "typescript": "5.8.3"
-  }
+    "name": "felipe-portfolio",
+    "version": "0.3.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "npx prettier . --write",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/icons-material": "^7.1.1",
+        "@mui/lab": "^7.0.0-beta.13",
+        "@mui/material": "^7.1.1",
+        "@types/node": "24.0.0",
+        "@types/react": "19.1.7",
+        "@types/react-dom": "19.1.6",
+        "animate.css": "^4.1.1",
+        "eslint": "9.28.0",
+        "eslint-config-next": "15.3.3",
+        "next": "15.3.3",
+        "react": "19.1.0",
+        "react-dom": "19.1.0",
+        "typescript": "5.8.3"
+    },
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "prettier": "3.5.3"
+    }
 }

@@ -1,43 +1,41 @@
 export const styles = {
     main: {
         maxWidth: 375,
-        height: "100%",
-        margin: "2rem 0",
+        height: '100%',
+        margin: '2rem 0',
         '&:hover': {
             '& header': {
                 display: 'flex !important',
-            }
-        }
+            },
+        },
     },
     chip: {
-        margin: "0.35rem 0.25rem"
+        margin: '0.35rem 0.25rem',
     },
     iconsActions: {
-        position: "relative",
+        position: 'relative',
         top: '0.75rem',
         marginBottom: '-12.8%',
         zIndex: 1,
-        width: "100%",
-        height: "3rem",
-        display: { xs: "flex", md: "none" },
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0 1rem",
+        width: '100%',
+        height: '3rem',
+        display: { xs: 'flex', md: 'none' },
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '0 1rem',
     },
     iconAction: {
-        backgroundColor: "secondary.light",
-        color: "primary.main",
+        backgroundColor: 'secondary.light',
+        color: 'primary.main',
         '&:hover ': {
-            backgroundColor: "secondary.light",
-            opacity: 0.7
-        }
-
+            backgroundColor: 'secondary.light',
+            opacity: 0.7,
+        },
     },
     chipsContainer: {
-        border: "1px sold red",
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-
+        border: '1px sold red',
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
     },
 }
