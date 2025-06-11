@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { CardProjects } from 'components/atoms/cardProjects'
+import { CardProjects } from 'components/atoms/CardProjects'
 import { styles } from './stylesMyProjects'
 
 export const MyProjects = () => {

@@ -10,7 +10,7 @@ import {
 } from '@mui/lab'
 import { experiences } from 'utils/constants'
 
-const TimelineDev = () => {
+export const TimelineDev = () => {
     const theme = useTheme()
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -93,5 +93,3 @@ const TimelineDev = () => {
         </Box>
     )
 }
-
-export default TimelineDev
