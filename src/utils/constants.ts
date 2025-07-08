@@ -1,6 +1,6 @@
 export const experiences = [
     {
-        year: 'April 2021- September 2022',
+        year: 'April 2020 - September 2022',
         title: 'Frontend Web Developer - MoyoAI',
         description: `
       During my time at this company, I was involved in the development of several projects for a client operating under the KYC (Know Your Customer) model, where user identity verification and compliance were critical. One of the most challenging and rewarding tasks I undertook was building a React.js application that integrated a camera system capable of capturing and clipping specific areas of the screen for identity validation purposes. Throughout these projects, I made extensive use of Google services, including Google Maps for geolocation features, Google Analytics for tracking user behavior, and Bitbucket for source control and team collaboration. This experience strengthened my ability to deliver high-precision, compliance-driven solutions in a dynamic development environment.
