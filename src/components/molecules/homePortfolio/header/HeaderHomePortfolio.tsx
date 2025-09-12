@@ -33,7 +33,6 @@ export const HeaderHomePortfolio = () => {
             inline: 'start',
             behavior: 'smooth',
         })
-    const goToIdSectionMobile = (id: string) => goToIdSection(id)
 
     return (
         <Box component="header" sx={styles.header}>

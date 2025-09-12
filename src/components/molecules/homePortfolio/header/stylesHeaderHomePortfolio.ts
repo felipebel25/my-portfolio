@@ -3,11 +3,12 @@ export const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: { xs: '1rem', md: '1.5rem 4%' },
+        padding: { xs: '1rem', md: '1.25rem 4%' },
         position: 'fixed',
         width: '100%',
         backgroundColor: 'info.main',
         zIndex: 3,
+        boxShadow: '0px 20px 19px 13px #110521b5',
     },
     urlSection: {
         width: '50%',
@@ -19,7 +20,7 @@ export const styles = {
         cursor: 'pointer',
         fontWeight: 700,
         '& > b': {
-            color: 'secondary.main',
+            color: 'primary.light',
         },
     },
     button: {
@@ -41,7 +42,7 @@ export const styles = {
             height: '2px',
             bottom: 0,
             left: 0,
-            backgroundColor: 'secondary.main',
+            backgroundColor: 'primary.light',
             transform: 'scaleX(0)',
             transformOrigin: 'top right',
             transition: 'transform 0.3s ease',

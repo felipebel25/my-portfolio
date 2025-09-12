@@ -1,10 +1,9 @@
-import { Box, Typography, useMediaQuery } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 
 import { styles } from './stylesAboutMe'
 
 export const AboutMe = () => {
-    const size = useMediaQuery('(min-width:600px)')
     return (
         <Box id="about_me" sx={styles.main} component="main">
             <Box component="section" sx={styles.sectionText}>

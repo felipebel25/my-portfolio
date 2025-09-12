@@ -17,7 +17,11 @@ export const TimelineDev = () => {
     return (
         <Box
             component="section"
-            sx={{ my: '3rem', px: { xs: '1.5rem', sm: '4.5%' }, py: '1rem' }}
+            sx={{
+                bgcolor: 'primary.main',
+                py: '3rem',
+                px: { xs: '1.5rem', sm: '4.5%' },
+            }}
         >
             <Typography
                 component="h3"

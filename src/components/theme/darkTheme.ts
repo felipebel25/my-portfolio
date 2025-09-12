@@ -1,18 +1,19 @@
 'use client'
 import { createTheme } from '@mui/material/styles'
+
 export const darkTheme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: '#ECECEC',
-            light: '#FFFFFF',
+            main: '#11071F',
+            light: '#7127BA',
         },
         secondary: {
-            main: '#66428A',
-            light: '#352743',
+            main: '#FFFFFF',
+            light: '#CCD6F6',
         },
         info: {
-            main: '#242424',
+            main: '#1A0B2E',
         },
     },
     typography: {
@@ -25,7 +26,7 @@ export const darkTheme = createTheme({
             defaultProps: {
                 size: 'medium',
                 disableElevation: true,
-                color: 'primary',
+                color: 'secondary',
                 style: {},
             },
             styleOverrides: {

@@ -18,8 +18,11 @@ export const BannerPortfolio = () => {
                     Hey I&#39;m Felipe
                 </Typography>
                 <Typography sx={styles.description}>
-                    Web Developer from Colombia. Espefically Frontend Developer.
-                    <br />I love create Applications with ReactJs.
+                    I create and improve applications that tackle complex
+                    challenges, leading projects with clean architecture and
+                    collaboration. Passionate about solving hard problems with
+                    elegant code, I craft scalable, resilient, and impactful
+                    solutions.
                 </Typography>
                 <Box>
                     <Button
@@ -72,8 +75,8 @@ export const BannerPortfolio = () => {
                     width="1050"
                     priority={true}
                     height="1050"
-                    alt="Foto Image de Felipe Medina Frontend Developer, Portafolio de Felipe Medina"
-                    src="/images/felipe_medina_image.webp"
+                    alt="Photo Image de Felipe Medina Frontend Developer, Portfolio of Felipe Medina"
+                    src="/images/felipe_medina_image.png"
                 />
             </Box>
         </Box>

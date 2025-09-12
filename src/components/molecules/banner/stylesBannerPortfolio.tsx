@@ -8,6 +8,7 @@ export const styles = {
         flexDirection: { xs: 'column-reverse', md: 'row' },
         justifyContent: { xs: 'flex-end', md: 'space-between' },
         alignItems: 'center',
+        backgroundColor: 'primary.main',
     },
     sectionText: {
         width: { xs: '100%', md: 'auto' },
@@ -26,6 +27,7 @@ export const styles = {
     description: {
         fontSize: '1.2rem',
         fontWeight: 'light',
+        maxWidth: { lg: '700px' },
         mb: '1rem',
     },
     sectionImage: {

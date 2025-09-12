@@ -1,8 +1,8 @@
 export const styles = {
     main: {
         background: {
-            xs: 'linear-gradient(180deg, #242424 -5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
-            md: 'linear-gradient(180deg, #242424 5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
+            xs: 'linear-gradient(180deg, #11071f -5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
+            md: 'linear-gradient(180deg, #11071f 5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
         },
         height: { xs: 'auto', md: '25rem' },
         pb: { xs: '25%', md: '0' },

@@ -7,7 +7,7 @@ export const styles = {
         pt: { xs: '0', md: '3rem' },
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'info.main',
+        bgcolor: 'primary.main',
         justifyContent: { xs: 'flex-end', md: 'space-between' },
         alignItems: { xs: 'center', md: 'flex-start' },
     },

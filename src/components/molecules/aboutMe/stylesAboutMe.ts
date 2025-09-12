@@ -1,6 +1,6 @@
 export const styles = {
     main: {
-        backgroundColor: 'secondary.light',
+        bgcolor: 'primary.main',
         height: { xs: 'auto', md: '33rem' },
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
@@ -27,6 +27,7 @@ export const styles = {
     },
     about: {},
     whoIam: {
+        color: 'primary.light',
         mb: '1rem',
         fontSize: '2.1rem',
         fontWeight: 700,

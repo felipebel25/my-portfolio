@@ -25,7 +25,7 @@ export const experiences = [
 ]
 export const projects = [
     {
-        name: 'Nearby Disney',
+        name: '📍 Nearby Disney',
         description:
             'Built a fun app that shows your distance from Disney Parks worldwide using your location, Leaflet for maps, and MongoDB $geoNear for geospatial distance calculations. 🌍🗺️🛰️',
         img: '/images/disney-app.png',
@@ -34,7 +34,7 @@ export const projects = [
         tags: ['ReactJs', 'AstroJs', 'Typescript', 'MongoDB', 'ExpressJs'],
     },
     {
-        name: 'PokeDex',
+        name: '👾 PokeDex',
         description:
             'Pokedex App is an application that displays a large number of pokemon and information about them. An interesting application as Frontend Developer.',
         img: '/images/pokedex.webp',
@@ -43,7 +43,7 @@ export const projects = [
         tags: ['ReactJs', 'NextJs', 'Typescript', 'MongoDB', 'Material-UI'],
     },
     {
-        name: 'HeyFunding',
+        name: '🐜 HeyFunding',
         description:
             'HeyFunding is a project in a beta state and was born as a university project that uses the powers of NextJs and integrates the mercadoPago API.',
         img: '/images/hey_funding.webp',
