@@ -1,21 +1,28 @@
+import { brand } from 'components/theme/darkTheme'
+
 export const styles = {
     main: {
-        maxWidth: 375,
+        maxWidth: 400,
+        width: '100%',
         height: '100%',
-        margin: '2rem 0',
+        backgroundColor: brand.surface,
+        borderRadius: '1rem',
+        transition: 'border-color 0.25s ease, transform 0.25s ease',
         '&:hover': {
+            borderColor: brand.borderStrong,
+            transform: 'translateY(-4px)',
             '& header': {
                 display: 'flex !important',
             },
         },
     },
     chip: {
-        margin: '0.35rem 0.25rem',
+        margin: '0.25rem',
     },
     iconsActions: {
         position: 'relative',
         top: '0.75rem',
-        marginBottom: '-12.8%',
+        marginBottom: '-3rem',
         zIndex: 1,
         width: '100%',
         height: '3rem',
@@ -25,17 +32,19 @@ export const styles = {
         padding: '0 1rem',
     },
     iconAction: {
-        backgroundColor: 'secondary.light',
-        color: 'primary.main',
+        backgroundColor: 'rgba(5, 5, 5, 0.8)',
+        border: `1px solid ${brand.borderStrong}`,
+        color: brand.white,
         '&:hover ': {
-            backgroundColor: 'secondary.light',
-            opacity: 0.7,
+            backgroundColor: brand.black,
+            color: brand.green,
         },
     },
     chipsContainer: {
-        border: '1px sold red',
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-around',
+        justifyContent: 'flex-start',
+        px: '0.75rem',
+        pb: '1rem',
     },
 }

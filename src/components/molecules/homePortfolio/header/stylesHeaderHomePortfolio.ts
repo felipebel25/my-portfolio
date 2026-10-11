@@ -1,37 +1,41 @@
+import { brand } from 'components/theme/darkTheme'
+
 export const styles = {
     header: {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: { xs: '1rem', md: '1.5rem 4%' },
+        padding: { xs: '1rem 1.25rem', md: '1.25rem 4%' },
         position: 'fixed',
         width: '100%',
-        backgroundColor: 'info.main',
+        backgroundColor: 'rgba(5, 5, 5, 0.75)',
+        backdropFilter: 'blur(12px)',
+        borderBottom: `1px solid ${brand.border}`,
         zIndex: 3,
     },
     urlSection: {
-        width: '50%',
-        maxWidth: '35rem',
+        width: '55%',
+        maxWidth: '40rem',
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
     },
     name: {
         cursor: 'pointer',
         fontWeight: 700,
         '& > b': {
-            color: 'secondary.main',
+            color: brand.green,
         },
     },
     button: {
         borderRadius: 0,
         cursor: 'pointer',
+        color: brand.gray,
+        '& .MuiButton-startIcon': {
+            opacity: 0.7,
+        },
         '&:hover': {
-            opacity: '1',
+            color: brand.white,
             backgroundColor: 'transparent',
-            '&::after': {
-                width: '100%',
-                transition: 'width 0.3s ease-in-out',
-            },
         },
         '&::before': {
             content: "''",
@@ -41,7 +45,7 @@ export const styles = {
             height: '2px',
             bottom: 0,
             left: 0,
-            backgroundColor: 'secondary.main',
+            backgroundColor: brand.green,
             transform: 'scaleX(0)',
             transformOrigin: 'top right',
             transition: 'transform 0.3s ease',
@@ -49,14 +53,19 @@ export const styles = {
         '&:hover::before': {
             visibility: 'visible',
             transform: 'scaleX(1)',
+            transformOrigin: 'top left',
         },
     },
     drawer: {
         backdropFilter: 'blur(4px)',
         transition: 'all 0.5s ease-out',
+        '& .MuiDrawer-paper': {
+            backgroundColor: brand.black,
+            borderLeft: `1px solid ${brand.border}`,
+        },
     },
     drawerContainer: {
-        width: '13rem',
+        width: '14rem',
     },
     nameDrawer: {
         pt: '3rem',
@@ -66,10 +75,14 @@ export const styles = {
         textAlign: 'center',
         fontWeight: 700,
         '& > b': {
-            color: 'secondary.main',
+            color: brand.green,
         },
     },
     menuItem: {
-        margin: '1rem 0',
+        margin: '0.5rem 0',
+        color: brand.gray,
+        '&:hover': {
+            color: brand.white,
+        },
     },
 }

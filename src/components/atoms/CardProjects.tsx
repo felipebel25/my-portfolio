@@ -70,7 +70,8 @@ export const CardProjects = ({
                 {tags.map((tag) => (
                     <Chip
                         sx={styles.chip}
-                        color="secondary"
+                        variant="outlined"
+                        size="small"
                         key={tag}
                         label={tag}
                     />

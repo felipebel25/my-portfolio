@@ -1,35 +1,65 @@
+import { brand } from 'components/theme/darkTheme'
+
 export const styles = {
     main: {
-        background: {
-            xs: 'linear-gradient(180deg, #242424 -5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
-            md: 'linear-gradient(180deg, #242424 5%, rgba(53,39,67,0.9556197478991597) 51%, rgba(53,39,67,1) 100%)',
-        },
-        height: { xs: 'auto', md: '25rem' },
-        pb: { xs: '25%', md: '0' },
+        position: 'relative',
+        overflow: 'hidden',
+        borderTop: `1px solid ${brand.border}`,
+        background: `radial-gradient(ellipse 60% 80% at 50% 120%, rgba(241, 91, 95, 0.14), transparent 70%), ${brand.black}`,
+        padding: { xs: '4rem 1.25rem 2rem', md: '6rem 4.5% 2.5rem' },
+        scrollMargin: '80px',
     },
     textSection: {
-        pt: { xs: '3rem', md: '8rem' },
         textAlign: 'center',
+        maxWidth: '44rem',
+        mx: 'auto',
+    },
+    eyebrow: {
+        fontFamily: 'monospace',
+        fontSize: '0.95rem',
+        color: brand.green,
+        letterSpacing: '0.05em',
     },
     title: {
         fontWeight: 700,
+        fontSize: { xs: '2rem', md: '2.8rem' },
+        mt: '0.5rem',
         mb: '1rem',
     },
+    titleAccent: {
+        color: brand.red,
+    },
     description: {
-        fontSize: { xs: '1.2rem', md: '1.4rem' },
+        fontSize: { xs: '1.05rem', md: '1.2rem' },
         fontWeight: 300,
+        color: brand.gray,
     },
     iconsContainer: {
-        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        gap: { xs: '1rem', md: '1.5rem' },
+        mt: '2.5rem',
     },
     iconButton: {
-        margin: { xs: '1.5rem 4%', md: '1.5rem 3rem' },
+        width: '4.25rem',
+        height: '4.25rem',
+        color: brand.white,
+        border: `1px solid ${brand.borderStrong}`,
+        transition: 'all 0.25s ease',
         '&:hover': {
-            color: 'secondary.main',
+            color: brand.black,
+            backgroundColor: brand.green,
+            borderColor: brand.green,
         },
     },
     icon: {
-        width: '3rem',
-        height: '100%',
+        width: '1.9rem',
+        height: '1.9rem',
+    },
+    copyright: {
+        textAlign: 'center',
+        fontSize: '0.85rem',
+        color: brand.grayDark,
+        mt: { xs: '3.5rem', md: '5rem' },
     },
 }

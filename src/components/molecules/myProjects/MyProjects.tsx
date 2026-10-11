@@ -1,15 +1,14 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 
 import { CardProjects } from 'components/atoms/CardProjects'
+import { SectionHeading } from 'components/atoms/SectionHeading'
 import { projects } from 'utils/constants'
 
 import { styles } from './stylesMyProjects'
 
 export const MyProjects = () => (
     <Box id="my_projects" component="section" sx={styles.main}>
-        <Typography variant="h4" component="h3" sx={styles.title}>
-            Side Projects
-        </Typography>
+        <SectionHeading eyebrow="projects" title="Side Projects" />
         <Box sx={styles.containerCards}>
             {projects.map((project) => (
                 <CardProjects

@@ -9,12 +9,18 @@ export const FooterPortfolio = () => {
     return (
         <Box id="footer" component="footer" sx={styles.main}>
             <Box sx={styles.textSection}>
-                <Typography variant="h4" component="h3" sx={styles.title}>
-                    Contact Me!
+                <Typography component="span" sx={styles.eyebrow}>
+                    {'// contact'}
+                </Typography>
+                <Typography variant="h4" component="h2" sx={styles.title}>
+                    Let&#39;s build something together
+                    <Box component="span" sx={styles.titleAccent}>
+                        .
+                    </Box>
                 </Typography>
                 <Typography sx={styles.description}>
-                    Let&#39;s collaborate and make your Application vision a
-                    reality!
+                    Open to new opportunities and collaborations — reach out on
+                    any of these channels.
                 </Typography>
                 <Box sx={styles.iconsContainer}>
                     {actions.map(({ Icon, name, url }) => (
@@ -22,6 +28,7 @@ export const FooterPortfolio = () => {
                             onClick={() => navigateToPublicUrl(url)}
                             size="large"
                             sx={styles.iconButton}
+                            aria-label={name}
                             key={name}
                         >
                             <Icon sx={styles.icon} />
@@ -29,6 +36,9 @@ export const FooterPortfolio = () => {
                     ))}
                 </Box>
             </Box>
+            <Typography sx={styles.copyright}>
+                © {new Date().getFullYear()} Felipe Medina
+            </Typography>
         </Box>
     )
 }
