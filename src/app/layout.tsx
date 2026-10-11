@@ -19,17 +19,18 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <title>Felipe Medina | Frontend Dev</title>
+                <title>Felipe Medina | Full-Stack Software Developer</title>
                 <meta name="author" content="Felipe Medina" />
                 <meta
                     name="description"
-                    content="Felipe Medina Front-End Developer with over two years of experience in JavaScript, TypeScript, Next.js, Material-UI, and similar technologies. Showcasing my work and projects in my personal portfolio."
+                    content="Felipe Medina — Full-Stack Software Developer based in Sydney, Australia, with 5+ years of experience in React, Next.js, React Native, TypeScript and Node.js."
                 />
                 <meta
                     name="keywords"
-                    content="Front-End Developer, JavaScript, TypeScript, Next.js, Material-UI, Portfolio, Projects, HTML, CSS,NextJs"
+                    content="Full-Stack Developer, Software Developer, React, Next.js, React Native, TypeScript, Node.js, Playwright, Sydney, Portfolio"
                 />
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="theme-color" content="#050505" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
@@ -48,11 +49,11 @@ export default function RootLayout({
 
                 <meta
                     property="og:title"
-                    content="Felipe Medina - Front-End Developer"
+                    content="Felipe Medina - Full-Stack Software Developer"
                 />
                 <meta
                     property="og:description"
-                    content="Front-End Developer with over two years of experience in JavaScript, TypeScript, Next.js, Material-UI, and similar technologies. Showcasing my work and projects in my personal portfolio."
+                    content="Full-Stack Software Developer with 5+ years of experience building web and mobile products with React, Next.js, React Native and Node.js."
                 />
                 <meta
                     property="og:image"
@@ -60,7 +61,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:url"
-                    content="https://www.felipemedina.site/"
+                    content="https://www.felipemedina.dev/"
                 />
             </head>
             <ThemeProvider theme={darkTheme}>

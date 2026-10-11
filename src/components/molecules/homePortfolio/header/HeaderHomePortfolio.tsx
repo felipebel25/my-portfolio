@@ -16,6 +16,7 @@ import {
     HomeOutlined,
     MenuOutlined,
     PersonOutline,
+    TimelineOutlined,
     WorkOutline,
 } from '@mui/icons-material'
 
@@ -33,11 +34,19 @@ export const HeaderHomePortfolio = () => {
             inline: 'start',
             behavior: 'smooth',
         })
-    const goToIdSectionMobile = (id: string) => goToIdSection(id)
+    const goToIdSectionMobile = (id: string) => {
+        handleClose()
+        goToIdSection(id)
+    }
 
     return (
         <Box component="header" sx={styles.header}>
-            <Typography component="h3" variant="h5" sx={styles.name}>
+            <Typography
+                component="h3"
+                variant="h5"
+                sx={styles.name}
+                onClick={() => goToIdSection('banner')}
+            >
                 <b>&lt;</b>Felipe_Medina <b>/&gt;</b>
             </Typography>
             <Box sx={size ? styles.urlSection : { display: 'none' }}>
@@ -80,7 +89,7 @@ export const HeaderHomePortfolio = () => {
                         <MenuItem
                             key={name}
                             sx={styles.menuItem}
-                            onClick={() => goToIdSection(url)}
+                            onClick={() => goToIdSectionMobile(url)}
                         >
                             <ListItemIcon>
                                 <Icon />
@@ -96,14 +105,19 @@ export const HeaderHomePortfolio = () => {
 
 const navActions = [
     {
-        name: 'Banner',
+        name: 'Home',
         url: 'banner',
         Icon: HomeOutlined,
     },
     {
-        name: 'About Me',
+        name: 'About',
         url: 'about_me',
         Icon: PersonOutline,
+    },
+    {
+        name: 'Experience',
+        url: 'experience',
+        Icon: TimelineOutlined,
     },
     {
         name: 'Projects',
@@ -111,7 +125,7 @@ const navActions = [
         Icon: WorkOutline,
     },
     {
-        name: 'Contact Me',
+        name: 'Contact',
         url: 'footer',
         Icon: ContactsOutlined,
     },
