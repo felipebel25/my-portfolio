@@ -1,99 +1,70 @@
-import { Typography, Paper, Box, useMediaQuery, useTheme } from '@mui/material'
-import {
-    Timeline,
-    TimelineItem,
-    TimelineSeparator,
-    TimelineConnector,
-    TimelineContent,
-    TimelineDot,
-    TimelineOppositeContent,
-} from '@mui/lab'
+import { Box, Chip, Typography } from '@mui/material'
+import { PlaceOutlined } from '@mui/icons-material'
+
+import { SectionHeading } from 'components/atoms/SectionHeading'
 import { experiences } from 'utils/constants'
 
-export const TimelineDev = () => {
-    const theme = useTheme()
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'))
+import { styles } from './stylesTimelineDev'
 
-    return (
-        <Box
-            component="section"
-            sx={{
-                bgcolor: 'primary.main',
-                py: '3rem',
-                px: { xs: '1.5rem', sm: '4.5%' },
-            }}
-        >
-            <Typography
-                component="h3"
-                variant="h4"
-                sx={{ mb: 4, textAlign: 'center', fontSize: { md: '2.85rem' } }}
-            >
-                Work Experience
-            </Typography>
-            <Timeline position={isSmallScreen ? 'right' : 'alternate'}>
-                {experiences.map((item, index) => (
-                    <TimelineItem key={index}>
-                        <TimelineOppositeContent
-                            sx={{
-                                display: { xs: 'none', md: 'block' },
-                                m: 'auto 0',
-                                fontSize: { xs: '0.8rem', sm: '0.875rem' },
-                            }}
-                            align="right"
-                            color="text.secondary"
-                        >
-                            {item.year}
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="primary" />
-                            {index < experiences.length - 1 && (
-                                <TimelineConnector />
-                            )}
-                        </TimelineSeparator>
-
-                        <TimelineContent
-                            sx={{
-                                width: '100%',
-                                py: '12px',
-                                px: { xs: 1, sm: 2 },
-                            }}
-                        >
-                            <Paper elevation={3} sx={{ p: { xs: 2, sm: 3 } }}>
-                                <Typography
-                                    variant="h6"
-                                    component="span"
-                                    sx={{
-                                        fontSize: { xs: '1rem', sm: '1.25rem' },
-                                    }}
-                                >
-                                    {item.title}
+export const TimelineDev = () => (
+    <Box id="experience" component="section" sx={styles.main}>
+        <SectionHeading eyebrow="experience" title="Work Experience" />
+        <Box component="ol" sx={styles.list}>
+            {experiences.map((item) => (
+                <Box
+                    component="li"
+                    key={`${item.company}-${item.period}`}
+                    sx={styles.item}
+                >
+                    <Box
+                        sx={{
+                            ...styles.dot,
+                            ...(item.current && styles.dotCurrent),
+                        }}
+                    />
+                    <Box sx={styles.meta}>
+                        <Typography sx={styles.period}>
+                            {item.period}
+                        </Typography>
+                        {item.current && (
+                            <Typography component="span" sx={styles.badge}>
+                                Current
+                            </Typography>
+                        )}
+                    </Box>
+                    <Box sx={styles.card}>
+                        <Typography component="h3" sx={styles.role}>
+                            {item.role}
+                        </Typography>
+                        <Box sx={styles.companyRow}>
+                            <Typography sx={styles.company}>
+                                {item.company}
+                            </Typography>
+                            <Typography sx={styles.location}>
+                                <PlaceOutlined sx={{ fontSize: '1rem' }} />
+                                {item.location}
+                            </Typography>
+                        </Box>
+                        <Box component="ul" sx={styles.highlights}>
+                            {item.highlights.map((highlight) => (
+                                <Typography component="li" key={highlight}>
+                                    {highlight}
                                 </Typography>
-                                <Typography
-                                    sx={{
-                                        fontSize: { xs: '0.9rem', sm: '1rem' },
-                                        mt: 1,
-                                    }}
-                                >
-                                    {item.description}
-                                </Typography>
-                                {isSmallScreen && (
-                                    <Typography
-                                        variant="body2"
-                                        color="text.secondary"
-                                        sx={{
-                                            mt: 2,
-                                            fontStyle: 'italic',
-                                            fontSize: '0.8rem',
-                                        }}
-                                    >
-                                        {item.year}
-                                    </Typography>
-                                )}
-                            </Paper>
-                        </TimelineContent>
-                    </TimelineItem>
-                ))}
-            </Timeline>
+                            ))}
+                        </Box>
+                        <Box sx={styles.tags}>
+                            {item.tags.map((tag) => (
+                                <Chip
+                                    key={tag}
+                                    label={tag}
+                                    size="small"
+                                    variant="outlined"
+                                />
+                            ))}
+                        </Box>
+                    </Box>
+                </Box>
+            ))}
         </Box>
-    )
-}
+    </Box>
+)
